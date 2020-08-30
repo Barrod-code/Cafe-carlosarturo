@@ -1,0 +1,11 @@
+$background: url('../img/bg.jpg');
+$font-color: white;
+
+*{
+    box-sizing: border-box;    
+}
+
+body{
+    background: $background;
+    color: $font-color;    
+}
