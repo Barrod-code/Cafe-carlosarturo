@@ -1,0 +1,35 @@
+header{
+    background: $background;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    .container{
+        .navbar{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $font-color;                                                
+                        margin: 10px;
+                        padding: 0;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .name-container{
+        .logo{
+            img{
+                width: 100px;
+                border-radius: 50px;
+            }            
+        }
+    }
+}
