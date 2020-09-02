@@ -1,0 +1,29 @@
+.location{    
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px auto 20px;
+        h3{
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .location-hours{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h4{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    .map{
+        width: 100%;
+        iframe{
+            width: 100%;
+        }
+    }
+}

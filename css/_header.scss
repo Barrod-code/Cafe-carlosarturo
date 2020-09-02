@@ -3,8 +3,10 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center 0;
+    color: $header-font-color;    
     .container{
         .navbar{
+            margin: 1em 0 1em;
             ul{
                 display: flex;
                 flex-direction: row;
@@ -12,10 +14,11 @@ header{
                 list-style: none;
                 li{
                     a{
-                        text-decoration: none;
-                        color: $font-color;                                                
+                        text-decoration: none;                                               
                         margin: 10px;
                         padding: 0;
+                        font-weight: 300;
+                        color: $header-font-color;
                         &:hover{
                             text-decoration: underline;
                         }
@@ -25,11 +28,33 @@ header{
         }
     }
     .name-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        height: 600px;              
         .logo{
             img{
                 width: 100px;
                 border-radius: 50px;
-            }            
+            }
+                                   
+        }
+        .name{
+            margin-left: 2rem;             
+            h1{
+                margin: 0;
+                font-size: 3rem;            
+                font-weight: 600;
+                .light{
+                    font-weight: 300;
+                }
+            }
+            h2{
+                font-weight: 300;
+                font-style: italic;
+                margin: 0;
+            }
         }
     }
 }
