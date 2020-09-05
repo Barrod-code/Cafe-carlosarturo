@@ -1,7 +1,7 @@
 footer{
     background: $background-color;
     .social-cancer{        
-        padding: 1rem 1rem;
+        padding: 0rem 0rem;
         font-size: 2rem;
         .container{
             display: flex;
@@ -22,7 +22,6 @@ footer{
             }
             .twitter:hover{ background-color: #1da1f2;}
             .facebook:hover{ background-color: #3b5998;}
-            .youtube:hover{ background-color: #ff0000;}
             .instagram:hover{ background-color: #405de6;}        
         }
     }

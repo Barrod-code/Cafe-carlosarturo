@@ -9,15 +9,22 @@
             text-align: center;
             width: 100%;
         }
-    }
-    .location-hours{
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        h4{
-            width: 100%;
-            margin-bottom: 15px;
+        .location-address{
+            width: 50%;
+        }
+        .location-hours{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 50%;
+            h4{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            p{
+                width: 50%;
+            }
         }
     }
     .map{
