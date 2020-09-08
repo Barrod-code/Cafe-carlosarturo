@@ -1,0 +1,60 @@
+header{
+    background: $background;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    color: $header-font-color;       
+    .container{
+        .navbar{
+            margin: 1em 0 1em;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                list-style: none;                
+                li{
+                    a{
+                        text-decoration: none;                                               
+                        margin: 5px;
+                        padding: 0;
+                        font-weight: 300;
+                        color: $header-font-color;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .name-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 50vh; 
+        .logo{
+            img{
+                width: 100px;
+                border-radius: 50px;
+            }
+                                   
+        }
+        .name{
+            margin-left: 2rem;             
+            h1{
+                margin: 0;
+                font-size: 3rem;            
+                font-weight: 600;
+                .light{
+                    font-weight: 300;
+                }
+            }
+            h2{
+                font-weight: 300;
+                font-style: italic;
+                margin: 0;
+            }
+        }
+    }
+}

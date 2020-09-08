@@ -1,11 +1,39 @@
 $background: url('../img/bg.jpg');
-$font-color: white;
+$background-color: #321d0a;
+$texture: url('../img/bg-textura.png');
+$font-family: 'open sans', sans-serif;
+$header-font-color: white;
+$font-size: 16px;
 
 *{
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
 }
 
-body{
-    background: $background;
-    color: $font-color;    
+body{    
+    font-family: $font-family;
+    font-size: $font-size;    
+    .container{
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;        
+    }
+    @import 'header';
+    .main{
+        background: $texture;
+        background-repeat: repeat;
+        h3{
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        @import 'about';
+        @import 'menu';
+        @import 'gallery';
+        @import 'location';        
+    }
+    @import 'footer';
+    @import 'mediaqueries';   
 }

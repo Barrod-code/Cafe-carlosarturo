@@ -1,0 +1,33 @@
+footer{
+    background: $background-color;
+    .social-cancer{        
+        padding: 0rem 0rem;
+        font-size: 2rem;
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;    
+            width: 80%;
+            max-width: 568px;
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                margin: 0.5rem;
+                border-radius: 5px;
+                width:80px;
+                min-width: 80px;
+                text-align: center;
+            }
+            .twitter:hover{ background-color: #1da1f2;}
+            .facebook:hover{ background-color: #3b5998;}
+            .instagram:hover{ background-color: #405de6;}        
+        }
+    }
+    .copyright{
+        color: $header-font-color;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
