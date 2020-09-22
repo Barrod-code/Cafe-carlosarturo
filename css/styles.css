@@ -49,6 +49,7 @@ body header .container .navbar ul li a {
   padding: 0;
   font-weight: 300;
   color: white;
+  position: relative;
 }
 
 body header .container .navbar ul li a:hover {

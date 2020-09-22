@@ -19,6 +19,7 @@ header{
                         padding: 0;
                         font-weight: 300;
                         color: $header-font-color;
+                        position: relative;
                         &:hover{
                             text-decoration: underline;
                         }
