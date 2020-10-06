@@ -49,6 +49,7 @@ body header .container .navbar ul li a {
   padding: 0;
   font-weight: 300;
   color: white;
+  position: relative;
 }
 
 body header .container .navbar ul li a:hover {
@@ -72,26 +73,42 @@ body header .name-container {
   height: 50vh;
 }
 
-body header .name-container .logo img {
+body header .name-container .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .name-container .cont .logo img {
   width: 100px;
   border-radius: 50px;
 }
 
-body header .name-container .name, body header .name-container .main .menu .menu-cont .menu-cont2 article .product .price, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .price {
+body header .name-container .cont .name, body header .name-container .cont .main .menu .menu-cont .menu-cont2 article .product .price, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .cont .price {
   margin-left: 2rem;
 }
 
-body header .name-container .name h1, body header .name-container .main .menu .menu-cont .menu-cont2 article .product .price h1, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .price h1 {
+body header .name-container .cont .name h1, body header .name-container .cont .main .menu .menu-cont .menu-cont2 article .product .price h1, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .cont .price h1 {
   margin: 0;
   font-size: 3rem;
   font-weight: 600;
 }
 
-body header .name-container .name h1 .light, body header .name-container .main .menu .menu-cont .menu-cont2 article .product .price h1 .light, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .price h1 .light {
+body header .name-container .cont .name h1 .light, body header .name-container .cont .main .menu .menu-cont .menu-cont2 article .product .price h1 .light, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .cont .price h1 .light {
   font-weight: 300;
 }
 
-body header .name-container .name h2, body header .name-container .main .menu .menu-cont .menu-cont2 article .product .price h2, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .price h2 {
+body header .name-container .cont .name h2, body header .name-container .cont .main .menu .menu-cont .menu-cont2 article .product .price h2, body .main .menu .menu-cont .menu-cont2 article .product header .name-container .cont .price h2 {
   font-weight: 300;
   font-style: italic;
   margin: 0;
@@ -137,7 +154,7 @@ body .main .about .container article {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
   float: right;
-  top: 100px;
+  top: 50vh;
 }
 
 body .main .about .container article p {
