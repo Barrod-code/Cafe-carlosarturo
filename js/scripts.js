@@ -30,29 +30,14 @@ $(document).ready(function () {
         });
     }
 
-    scrollTo('about');
-    scrollTo('menu');
-    scrollTo('gallery');
-    scrollTo('location');
-    scrollTo('social-cancer');
-
-    let test0 = $('.navbar a');
-    let test = $('.navbar a').map(element=>element.id);
-    console.log(test0[0].id,test0[1].id)
-    //let test2 = test.map(element=>element.id);
-    console.log(test0);
-    console.log(Object.values(test));
-    console.log(test);
-    let test2 = test.each(element => {
-        element.substring(10);
-    });
-    console.log(test2);
-
     let retval = []
     $('.navbar a').each(function(){
-        retval.push($(this).attr('id'))
-    })
-    return retval
-    console.log(retval);
-
+        retval.push($(this).attr('id').substring(4));
+        return retval
+    }) 
+   
+    $.each(retval,function (index,value){
+        scrollTo(value);
+    });
+ 
 });
