@@ -1,4 +1,4 @@
-//$(document).ready(function (){
+$(document).ready(function (){
     let windowWidth = $(window).width();
     let windowHeight = $(window).height();
         $(window).resize(function(){
@@ -21,4 +21,4 @@
                 );
             }
         });
-//});
+});
